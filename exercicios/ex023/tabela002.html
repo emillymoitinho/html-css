@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: deeppink;
+        }
+
+
+        table {
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 0 20px white;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            color: white;
+            background-color:  rgb(255, 131, 152);
+        }
+       
+        td,th {
+           border: 1px solid rgb(247, 63, 176);
+           padding: 10px;
+        }
+
+
+        thead, tfoot {
+            background-color: deeppink;
+            color: white;
+        }
+        
+        
+        td.num {
+            text-align: right;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: deeppink;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white; 
+        }
+
+       tbody > tr:nth-child(even) {   /* 2n */
+        background-color: rgb(253, 156, 173);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grande</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+        <table>
+            <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/20px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                    <td class="num">44 411 238  </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt=""> Minas Gerais</td>
+                    <td class="num">20 538 718  </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt=""> Rio de Janeiro</td>
+                    <td class="num">16 054 524  </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt=""> Bahia</td>
+                    <td class="num">14 141 626</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt=""> Paraná</td>
+                    <td class="num">11 444 380</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt=""> Rio Grande do Sul</td>
+                    <td class="num">10 882 965</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt=""> Pernambuco</td>
+                    <td class="num">8 796 448</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt=""> Ceará</td>
+                    <td class="num">8 794 957</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt=""> Pará</td>
+                    <td class="num">8 121 025</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt=""> Santa Catarina</td>
+                    <td class="num">7 610 361</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt=""> Goiás</td>
+                    <td class="num">7 056 495</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="Maranhão"> Maranhão</td>
+                    <td class="num">6 775 805</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt="Paraíba"> Paraíba</td>
+                    <td class="num">3 974 687</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt="Amazonas"> Amazonas</td>
+                    <td class="num">3 941 613</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt="Espírito Santo"> Espírito Santo</td>
+                    <td class="num">3 833 712</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt="Mato Grosso"> Mato Grosso</td>
+                    <td class="num">3 658 649</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt="Rio Grande do Norte"> Rio Grande do Norte</td>
+                    <td class="num">3 302 729</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt="Piauí"> Piauí</td>
+                    <td class="num">3 271 199</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt="Alagoas"> Alagoas</td>
+                    <td class="num">3 127 683   </td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt="Distrito Federal"> Distrito Federal</td>
+                    <td class="num">2 817 381</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="Mato Grosso do Sul"> Mato Grosso do Sul</td>
+                    <td class="num">2 757 013</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt="Sergipe"> Sergipe</td>
+                    <td class="num">2 209 558</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt="Rondônia"> Rondônia</td>
+                    <td class="num">1 581 196</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt="Tocantins"> Tocantins</td>
+                    <td class="num">1 511 460</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt="Acre">Acre</td>
+                    <td class="num">830 018</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt="Amapá"> Amapá</td>
+                    <td class="num">733 759</td>
+                </tr>
+                <tr>
+                    <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt="Roraima"> Roraima</td>
+                    <td class="num">636 707</td>
+                </tr>      
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th class="excessao" scope="row">Total de Habitantes</th>
+                    <td class="excessao num"><strong>219 040 490</strong></td>
+                </tr>
+            </tfoot>
+            
+        </table>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas ut sint omnis quod! Cupiditate ratione hic amet qui dolorum numquam, iure eligendi quibusdam quas voluptate rem illum quia omnis!
+        Architecto asperiores, dolore molestias mollitia minus illum incidunt beatae, a quod corporis veniam doloribus eos minima voluptate voluptatum quas, nisi assumenda commodi consectetur rem aliquam reprehenderit ratione at! Nulla, maiores?
+        Expedita atque perferendis vitae sed reprehenderit alias quam iure incidunt error? Molestias ipsam laboriosam, quam doloribus rem suscipit nam fuga tempora sunt qui iure distinctio. Ea iure eaque adipisci deleniti.
+        Totam eos ducimus alias natus consequuntur porro animi corrupti rerum accusamus iusto doloremque itaque id sed consequatur, modi possimus dolorum molestiae perferendis odio ipsum, eligendi dolore amet nam! Maxime, unde!
+        Id quaerat asperiores assumenda sint? Quasi deleniti atque facere accusamus eius assumenda quisquam nostrum quis numquam placeat corporis expedita odio perspiciatis cum animi necessitatibus eaque cupiditate ab nesciunt, dolore accusantium.</p>
+</body>
+</html>
+
