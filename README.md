@@ -4,7 +4,7 @@ Desafios e Exercícios que realizei durante o Curso de HTML5 e CSS3 do Curso em 
 ## Exercícios 📝
 
 * [Módulo 1](https://emillymoitinho.github.io/html-css/pagina-exercicios/modulo1/exercicios.html)  
-* [Módulo 2](https://emillymoitinho.github.io/html-css/exercicios)
+* [Módulo 2](https://emillymoitinho.github.io/html-css/pagina-exercicios/modulo2/exercicios)
 * [Módulo 3](https://emillymoitinho.github.io/html-css/exercicios) 
 * [Módulo 4](https://emillymoitinho.github.io/html-css/exercicios)
 * [Módulo 5](https://emillymoitinho.github.io/html-css/exercicios)
