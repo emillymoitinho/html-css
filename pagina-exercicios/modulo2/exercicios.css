@@ -17,13 +17,13 @@ main {
 
 section {
     position: absolute;
-    top: 300px;
+    top: 325px;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #FFFFFF;
-    padding: 40px;
+    padding: 50px;
     border-radius: 8px;
-    height: 500px;
+    height: 513px;
     box-shadow: 10px 10px 10px 2px pink;
 }
 
@@ -34,8 +34,16 @@ section h1 {
 }
 
 section h2 {
+    display: flex;
     color: rgb(233, 112, 133);
     margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h2 img {
+    padding-right: 10px;
 }
 
 article#links {
@@ -50,6 +58,7 @@ article#links > ul > li {
 article#links > ul > li > a {
     color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 
 article#links > ul > li > a:hover{
@@ -59,6 +68,7 @@ article#links > ul > li > a:hover{
 
 h4 {
     text-align: center;
+    margin-top: 50px;
 }
 
 h4 > a {
